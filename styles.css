@@ -1,0 +1,34 @@
+:root {
+  --accent-color: #be3144;
+  --full-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  height: 100vh;
+  width: var(--full-width);
+}
+
+#navbar {
+  position: sticky;
+  top: 10vw;
+  width: var(--full-width);
+}
+
+#navbar > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+#navbar > ul > li {
+  color: white;
+}
