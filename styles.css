@@ -42,6 +42,7 @@ body {
   justify-content: center;
   height: 5vh;
   width: var(--full-width);
+  padding: 3vh 5vw;
   text-decoration: none;
 }
 
@@ -54,17 +55,62 @@ body {
 
 #navbar > ul > li > a {
   color: var(--white);
+  font-size: 1.2rem;
   text-decoration: none;
 }
 
 main {
   position: relative;
-  top: 5vh;
 }
 
 #welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   height: var(--full-height);
   width: var(--full-width);
+}
+
+#welcome-section > h1 {
+  color: var(--white);
+  font-size: 2.5rem;
+  margin-bottom: 2vh;
+}
+
+#welcome-section > p {
+  color: var(--red);
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 100;
+}
+
+#projects {
+  background-color: var(--blue);
+  color: var(--white);
+  height: var(--full-height);
+  width: var(--full-width);
+  text-align: center;
+}
+
+#projects > p {
+  font-size: 1.2rem;
+  margin-bottom: 2vh;
+  padding-top: 5vh;
+}
+
+hr {
+  color: var(--white);
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+}
+
+#tile-container {
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes nav-links {
