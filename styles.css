@@ -189,6 +189,16 @@ button:hover {
   text-decoration: none;
 }
 
+footer {
+  background-color: var(--gray);
+  color: var(--white);
+  display: flex;
+}
+
+footer > p {
+  font-size: 0.6rem;
+  padding: 3vh 5vw;
+}
 
 @keyframes nav-links {
   0% {
