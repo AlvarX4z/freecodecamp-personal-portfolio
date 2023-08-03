@@ -5,6 +5,7 @@
   --gray: #303841;
   --hundred-percentage: 100%;
   --ninety-percentage: 90%;
+  --eighty-percentage: 80%;
 }
 
 *,
@@ -140,6 +141,7 @@ hr {
 .tile > img {
   margin: 0 auto;
   max-width: var(--ninety-percentage);
+  width: var(--ninety-percentage);
 }
 
 .tile > figcaption {
@@ -165,6 +167,7 @@ button:hover {
   animation-timing-function: linear;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
+  cursor: pointer;
 }
 
 #contact {
@@ -223,5 +226,65 @@ footer > p {
     background-color: var(--white);
     border-radius: 20px;
     color: var(--gray);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #projects > p {
+    font-size: 2rem;
+  }
+
+  #tile-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project-tile {
+    width: 50%;
+  }
+
+  .tile > img {
+    max-width: var(--eighty-percentage);
+    max-height: 50vh;
+    width: var(--eighty-percentage);
+    object-fit: cover;
+  }
+
+  .tile > figcaption {
+    width: var(--eighty-percentage);
+  }
+
+  button {
+    font-size: 1.3rem;
+    width: 10vw;
+    height: 8vh;
+  }
+
+  #contact {
+    font-size: 2rem;
+    height: 50vh;
+  }
+
+  #contact > p {
+    font-size: 1rem;
+  }
+
+  #contact > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icon {
+    margin: 5vh 3vw 0 3vw;
+  }
+
+  footer {
+    justify-content: space-around;
+  }
+
+  footer > p {
+    font-size: 0.8rem;
   }
 }
