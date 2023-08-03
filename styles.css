@@ -162,6 +162,34 @@ button:hover {
   animation-fill-mode: forwards;
 }
 
+#contact {
+  background-color: var(--gray);
+  border-bottom: 5px solid var(--red);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+  width: var(--full-width);
+  text-align: center;
+}
+
+#contact > p {
+  font-size: 0.7rem;
+  font-style: italic;
+  margin: 1vh 0 3vh 0;
+}
+
+.icon {
+  margin: 3vh 0;
+}
+
+.profile-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+
 @keyframes nav-links {
   0% {
     background-color: var(--red);
