@@ -3,7 +3,8 @@
   --white: #fff;
   --blue: #45567d;
   --gray: #303841;
-  --full-width: 100%;
+  --hundred-percentage: 100%;
+  --ninety-percentage: 90%;
 }
 
 *,
@@ -17,14 +18,14 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   height: 100vh;
-  width: var(--full-width);
+  width: var(--hundred-percentage);
 }
 
 #navbar {
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
-  width: var(--full-width);
+  width: var(--hundred-percentage);
   z-index: 1;
 }
 
@@ -41,7 +42,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 5vh;
-  width: var(--full-width);
+  width: var(--hundred-percentage);
   padding: 3vh 5vw;
   text-decoration: none;
 }
@@ -69,9 +70,13 @@ main {
   justify-content: center;
   align-items: center;
   background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  background-image: linear-gradient(
+    62deg,
+    #3a3d40 0%,
+    #181719 var(--hundred-percentage)
+  );
   height: 100vh;
-  width: var(--full-width);
+  width: var(--hundred-percentage);
 }
 
 #welcome-section > h1 {
@@ -90,8 +95,8 @@ main {
 #projects {
   background-color: var(--blue);
   color: var(--white);
-  height: 100%;
-  width: var(--full-width);
+  height: var(--hundred-percentage);
+  width: var(--hundred-percentage);
   text-align: center;
 }
 
@@ -103,7 +108,7 @@ main {
 
 hr {
   color: var(--white);
-  width: 90%;
+  width: var(--ninety-percentage);
   margin: 0 auto;
   margin-bottom: 5vh;
 }
@@ -118,7 +123,7 @@ hr {
   flex-direction: column;
   flex-wrap: nowrap;
   margin-bottom: 7vh;
-  width: var(--full-width);
+  width: var(--hundred-percentage);
 }
 
 .project-tile > a {
@@ -134,14 +139,14 @@ hr {
 
 .tile > img {
   margin: 0 auto;
-  max-width: 90%;
+  max-width: var(--ninety-percentage);
 }
 
 .tile > figcaption {
   background-color: var(--gray);
   margin: 0 auto;
   padding: 2vh 3vw;
-  width: 90%;
+  width: var(--ninety-percentage);
 }
 
 button {
@@ -170,7 +175,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   height: 70vh;
-  width: var(--full-width);
+  width: var(--hundred-percentage);
   text-align: center;
 }
 
