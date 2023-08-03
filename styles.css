@@ -2,7 +2,7 @@
   --red: #be3144;
   --white: #fff;
   --blue: #45567d;
-  --full-height: 100vh;
+  --gray: #303841;
   --full-width: 100%;
 }
 
@@ -16,7 +16,7 @@
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  height: var(--full-height);
+  height: 100vh;
   width: var(--full-width);
 }
 
@@ -70,7 +70,7 @@ main {
   align-items: center;
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-  height: var(--full-height);
+  height: 100vh;
   width: var(--full-width);
 }
 
@@ -90,7 +90,7 @@ main {
 #projects {
   background-color: var(--blue);
   color: var(--white);
-  height: var(--full-height);
+  height: 100%;
   width: var(--full-width);
   text-align: center;
 }
@@ -113,11 +113,72 @@ hr {
   flex-direction: column;
 }
 
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-bottom: 7vh;
+  width: var(--full-width);
+}
+
+.project-tile > a {
+  color: var(--white);
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+}
+
+.tile > img {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.tile > figcaption {
+  background-color: var(--gray);
+  margin: 0 auto;
+  padding: 2vh 3vw;
+  width: 90%;
+}
+
+button {
+  background-color: var(--gray);
+  border-style: none;
+  color: var(--white);
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+  width: 30vw;
+  height: 5vh;
+}
+
+button:hover {
+  animation-name: button-show;
+  animation-timing-function: linear;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+}
+
 @keyframes nav-links {
   0% {
     background-color: var(--red);
   }
   100% {
     background-color: var(--blue);
+  }
+}
+
+@keyframes button-show {
+  0% {
+    background-color: var(--gray);
+    color: var(--white);
+  }
+  100% {
+    background-color: var(--white);
+    border-radius: 20px;
+    color: var(--gray);
   }
 }
